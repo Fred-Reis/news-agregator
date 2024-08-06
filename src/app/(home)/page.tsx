@@ -2,13 +2,15 @@
 
 import { useEffect, useMemo } from "react";
 
-import { Card } from "@/components";
+import { Card, NoArticles } from "@/components";
+import HomeLoading from "./loading";
+
 import useMultipleApis from "@/infra/http/hook/useMultipleApis";
+import { filterArticles } from "@/hooks/useFilterArticles";
 
 import { useArticlesStore } from "@/store/articlesStore";
-import { filterArticles } from "@/hooks/useFilterArticles";
-import useFilterStore from "@/store/filterStore";
 import usePreferencesStore from "@/store/preferencesStore";
+import useFilterStore from "@/store/filterStore";
 
 export default function Home() {
   const { articles, loading } = useArticlesStore();
@@ -59,11 +61,11 @@ export default function Home() {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <HomeLoading />;
   }
 
-  if (articles.length === 0) {
-    return <div>No articles found.</div>;
+  if (filteredArticles.length === 0) {
+    return <NoArticles />;
   }
 
   return (
