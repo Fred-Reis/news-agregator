@@ -9,13 +9,28 @@ import {
   parseNewsAPIOrgArticles,
 } from "@/infra/http/utils/parseArticlesPayload";
 import { useArticlesStore } from "@/store/articlesStore";
+import { getDates } from "@/utils/functions/getDates";
+import useFilterStore from "@/store/filterStore";
+import { getAuthors } from "@/utils/functions/getAuthors";
+import { getSources } from "@/utils/functions/getSources";
+import { getCategories } from "@/utils/functions/getCategories";
+import { transformArray } from "@/utils/functions/transformArray";
+import usePreferencesStore from "@/store/preferencesStore";
 
-const NEWSAPI_AI_KEY = "7d87ad0a-27bd-47dd-a7df-a1df02dc9770";
-const NEWSAPI_ORG_KEY = "2b396334695f4fbeafe96f69833e69ec";
-const NYT_API_KEY = "oJHWU3cSvV7pRpG2VaSAXxV76VeVzvsH";
+const NEWSAPI_ORG_KEY = process.env.NEXT_PUBLIC_NEWSAPI_ORG_KEY;
+const NEWSAPI_AI_KEY = process.env.NEXT_PUBLIC_NEWSAPI_AI_KEY;
+const NYT_API_KEY = process.env.NEXT_PUBLIC_NYT_API_KEY;
 
 const useMultipleApis = (query?: string) => {
   const { setArticles, setError, setLoading } = useArticlesStore();
+  const { handleSetDatesList, handleSetCategoriesList, handleSetSourcesList } =
+    useFilterStore();
+
+  const {
+    handleSetAuthorsList,
+    handleSetCategoriesList: handleSetCategoriesListPreferences,
+    handleSetSourcesList: handleSetSourcesListPreferences,
+  } = usePreferencesStore();
 
   const {
     data: nytData,
@@ -76,6 +91,13 @@ const useMultipleApis = (query?: string) => {
     setArticles(articles);
     setError(isError ? "An error occurred while fetching data" : null);
     setLoading(isLoading);
+
+    handleSetCategoriesListPreferences(transformArray(getCategories(articles)));
+    handleSetSourcesListPreferences(transformArray(getSources(articles)));
+    handleSetAuthorsList(transformArray(getAuthors(articles)));
+    handleSetCategoriesList(transformArray(getCategories(articles)));
+    handleSetSourcesList(transformArray(getSources(articles)));
+    handleSetDatesList(transformArray(getDates(articles)));
   }, [nytData, newsApiData, newsApiOrgData]);
 
   return { fetchAllData };
