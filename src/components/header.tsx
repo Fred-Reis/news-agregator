@@ -7,13 +7,26 @@ import Link from "next/link";
 import { Search, Newspaper, Grip } from "lucide-react";
 
 import { Filter, Navbar, SliderMenu } from "@/components";
+import useMultipleApis from "@/infra/http/hook/useMultipleApis";
 
 export const Header = () => {
   const [showSliderMenu, setShowSliderMenu] = useState(false);
+  const [query, setQuery] = useState("");
+
+  const { fetchAllData } = useMultipleApis(query);
 
   const handleToggleSliderMenu = useCallback(() => {
     setShowSliderMenu((prev) => !prev);
   }, [setShowSliderMenu]);
+
+  function handleChange(event: any) {
+    setQuery(event.target.value);
+  }
+
+  function handleSubmit(event: any) {
+    event.preventDefault();
+    fetchAllData().finally(() => setQuery(""));
+  }
 
   return (
     <>
@@ -35,21 +48,21 @@ export const Header = () => {
           <div className="flex items-center gap-3">
             <Filter />
 
-            <form className="flex items-center rounded-md bg-slate-100 ring-2 ring-[#59b0d7] px-5 py-2 gap-3 w-full lg:w-[320px]">
-              <Search className="w-5 h-5 text-[#59b0d7]" />
+            <form
+              onSubmit={handleSubmit}
+              className="flex items-center rounded-md bg-slate-100 ring-2 ring-[#59b0d7] px-3 py-2 gap-3 w-full lg:w-[320px]"
+            >
+              <button type="submit" disabled={!query}>
+                <Search className="w-5 h-5 text-[#59b0d7]" />
+              </button>
 
               <input
                 placeholder="Search"
+                value={query}
+                onChange={handleChange}
                 className="outline-none flex-1 bg-transparent placeholder:text-gray-400 text-gray-800"
               />
             </form>
-
-            {/* <button
-              className="rounded-md text-sm text-[#59b0d7] border-2 border-[#59b0d7] p-2  "
-              type="submit"
-            >
-              Submit
-            </button> */}
           </div>
         </div>
       </header>
