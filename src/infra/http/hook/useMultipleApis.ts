@@ -75,10 +75,6 @@ const useMultipleApis = (query?: string) => {
   };
 
   useEffect(() => {
-    fetchAllData();
-  }, []);
-
-  useEffect(() => {
     const articles: Article[] = [
       ...(nytData ? parseNYTArticles(nytData) : []),
       ...(newsApiData ? parseNewsAPIAiArticles(newsApiData) : []),
