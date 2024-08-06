@@ -60,7 +60,7 @@ export const Filter = () => {
 
         {isOpen && (
           <div className="absolute flex flex-col h-80 right-0 mt-2 w-full rounded-lg border-2 bg-[#fff] border-[#59b0d7] overflow-scroll">
-            <ul aria-orientation="vertical" aria-labelledby="options-menu">
+            <ul aria-labelledby="options-menu">
               <span className="flex px-4 py-1 text-slate-600 font-semibold">
                 Date
               </span>
@@ -76,7 +76,7 @@ export const Filter = () => {
               ))}
             </ul>
 
-            <ul aria-orientation="vertical" aria-labelledby="options-menu">
+            <ul aria-labelledby="options-menu">
               <span className="flex px-4 py-1 text-slate-600 font-semibold">
                 Category
               </span>
@@ -92,7 +92,7 @@ export const Filter = () => {
               ))}
             </ul>
 
-            <ul aria-orientation="vertical" aria-labelledby="options-menu">
+            <ul aria-labelledby="options-menu">
               <span className="flex px-4 py-1 text-slate-600 font-semibold">
                 Source
               </span>
