@@ -2,6 +2,8 @@ export { Collapsible } from "./collapsible";
 export { FilterItem } from "./filterItem";
 export { SliderItem } from "./sliderItem";
 export { SliderMenu } from "./sliderMenu";
+export { NoArticles } from "./noArticles";
+export { Skeleton } from "./skeleton";
 export { Filter } from "./filter";
 export { Navbar } from "./navbar";
 export { Card } from "./newsCard";

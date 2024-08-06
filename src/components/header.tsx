@@ -58,6 +58,7 @@ export const Header = () => {
 
               <input
                 placeholder="Search"
+                name="search"
                 value={query}
                 onChange={handleChange}
                 className="outline-none flex-1 bg-transparent placeholder:text-gray-400 text-gray-800"
