@@ -1,41 +1,25 @@
 import { create } from "zustand";
 
-interface ValueProps {
-  value: string;
-  checked: boolean;
-}
+import { FilterItemProps } from "@/@types/filter";
 
 interface UserStoreProps {
-  categories: ValueProps[];
-  sources: ValueProps[];
-  authors: ValueProps[];
-  handleSetCategoriesList: (value: ValueProps[]) => void;
-  handleSetSourcesList: (value: ValueProps[]) => void;
-  handleSetAuthorsList: (value: ValueProps[]) => void;
+  categories: FilterItemProps[];
+  sources: FilterItemProps[];
+  authors: FilterItemProps[];
+  handleSetCategoriesList: (value: FilterItemProps[]) => void;
+  handleSetSourcesList: (value: FilterItemProps[]) => void;
+  handleSetAuthorsList: (value: FilterItemProps[]) => void;
 }
 
 const usePreferencesStore = create<UserStoreProps>((set) => ({
-  categories: [
-    { value: "Health", checked: true },
-    { value: "Technology", checked: true },
-    { value: "Cook", checked: true },
-  ],
+  categories: [],
+  sources: [],
+  authors: [],
 
-  sources: [
-    { value: "wired", checked: true },
-    { value: "BBC", checked: true },
-    { value: "NYT", checked: true },
-  ],
-
-  authors: [
-    { value: "John Doe", checked: true },
-    { value: "Jane Doe", checked: true },
-    { value: "Joe Doe", checked: true },
-  ],
-
-  handleSetCategoriesList: (value: ValueProps[]) => set({ categories: value }),
-  handleSetSourcesList: (value: ValueProps[]) => set({ sources: value }),
-  handleSetAuthorsList: (value: ValueProps[]) => set({ authors: value }),
+  handleSetCategoriesList: (value: FilterItemProps[]) =>
+    set({ categories: value }),
+  handleSetSourcesList: (value: FilterItemProps[]) => set({ sources: value }),
+  handleSetAuthorsList: (value: FilterItemProps[]) => set({ authors: value }),
 }));
 
 export default usePreferencesStore;

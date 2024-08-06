@@ -1,41 +1,25 @@
 import { create } from "zustand";
 
-interface ValueProps {
-  value: string;
-  checked: boolean;
-}
+import { FilterItemProps } from "@/@types/filter";
 
 interface UserStoreProps {
-  categories: ValueProps[];
-  sources: ValueProps[];
-  dates: ValueProps[];
-  handleSetCategoriesList: (value: ValueProps[]) => void;
-  handleSetSourcesList: (value: ValueProps[]) => void;
-  handleSetDatesList: (value: ValueProps[]) => void;
+  categories: FilterItemProps[];
+  sources: FilterItemProps[];
+  dates: FilterItemProps[];
+  handleSetCategoriesList: (value: FilterItemProps[]) => void;
+  handleSetSourcesList: (value: FilterItemProps[]) => void;
+  handleSetDatesList: (value: FilterItemProps[]) => void;
 }
 
 const useFilterStore = create<UserStoreProps>((set) => ({
-  categories: [
-    { value: "Health", checked: true },
-    { value: "Technology", checked: true },
-    { value: "Cook", checked: true },
-  ],
+  categories: [],
+  sources: [],
+  dates: [],
 
-  sources: [
-    { value: "wired", checked: true },
-    { value: "BBC", checked: true },
-    { value: "NYT", checked: true },
-  ],
-
-  dates: [
-    { value: "20/03/2023", checked: true },
-    { value: "21/03/2023", checked: true },
-    { value: "22/03/2023", checked: true },
-  ],
-
-  handleSetCategoriesList: (value: ValueProps[]) => set({ categories: value }),
-  handleSetSourcesList: (value: ValueProps[]) => set({ sources: value }),
-  handleSetDatesList: (value: ValueProps[]) => set({ dates: value }),
+  handleSetCategoriesList: (value: FilterItemProps[]) =>
+    set({ categories: value }),
+  handleSetSourcesList: (value: FilterItemProps[]) => set({ sources: value }),
+  handleSetDatesList: (value: FilterItemProps[]) => set({ dates: value }),
 }));
 
 export default useFilterStore;
