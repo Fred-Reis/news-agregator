@@ -39,9 +39,9 @@ export const Collapsible = ({ title, children }: CollapsibleProps) => {
             : "lg:-z-10! lg:translate-y-0 hidden lg:flex"
         )}
       >
-        <div className="flex flex-1 items-center justify-between max-w-[1400px] m-auto">
+        <ul className="flex gap-2 items-center justify-between w-[1400px] lg:max-h-full lg:pb-2 m-auto whitespace-nowrap overflow-scroll lg:overflow-y-hidden">
           {children}
-        </div>
+        </ul>
       </div>
     </>
   );
