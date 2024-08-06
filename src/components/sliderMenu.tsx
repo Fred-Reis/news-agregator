@@ -62,7 +62,7 @@ export const SliderMenu = ({
       <h3 className="text-slate-600 font-semibold mb-4">Preferences</h3>
 
       <Collapsible title="Sources">
-        <ul className="w-full flex flex-1 flex-col">
+        <ul className="w-full flex flex-1 h-48 my-auto flex-col">
           {sources.map((source: FilterItemProps) => (
             <SliderItem
               key={source.value}
@@ -75,7 +75,7 @@ export const SliderMenu = ({
         </ul>
       </Collapsible>
       <Collapsible title="Categories">
-        <ul className="w-full flex flex-1 flex-col">
+        <ul className="w-full flex flex-1 h-48 my-auto flex-col">
           {categories.map((category: FilterItemProps) => (
             <SliderItem
               key={category.value}
@@ -88,7 +88,7 @@ export const SliderMenu = ({
         </ul>
       </Collapsible>
       <Collapsible title="Authors">
-        <ul className="w-full flex flex-1 flex-col">
+        <ul className="w-full flex flex-1 h-48 my-auto flex-col">
           {authors.map((author: FilterItemProps) => (
             <SliderItem
               key={author.value}
