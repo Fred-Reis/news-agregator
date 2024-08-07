@@ -1,6 +1,6 @@
 <div align="center">
-  <img alt="Agidesk Challenge"
-    src="src/assets/agidesk-logo.svg"
+  <img alt="News Agregator"
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWA8eRoFDTR6FnHVjEk_0AjDdw7QgvohOnxQ&s"
   />
 
 </div>
