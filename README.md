@@ -21,8 +21,6 @@
 
 </p>
 
----
-
 <h3 align="center">
   Links:
 </h3>
@@ -77,8 +75,6 @@ The objective of this project is to develop a frontend application that aggregat
 
 <https://agi-fe-challenge.vercel.app/>
 
----
-
 ## 🖥 Frontend
 
 The frontend application includes:
@@ -87,16 +83,12 @@ The frontend application includes:
 - **Personalized News Feed:** Users can customize their news feed by selecting preferred sources, categories, and authors.
 - **Mobile-Responsive Design:** The website is optimized for viewing on mobile devices.
 
----
-
 ## 🔥 Features
 
 - **Search Articles:** Search for articles based on keywords.
 - **Filter Articles:** Filter results by date, category, and source.
 - **Custom News Feed:** Users can personalize their news feed by choosing preferred sources, categories, and authors.
 - **Responsive Design:** Fully responsive design for optimal viewing on mobile devices.
-
----
 
 ## 📣 Requirements
 
@@ -116,15 +108,11 @@ Choose at least three data sources from the list below:
 6. **BBC News:** Access articles from BBC News, with search and filtering capabilities.
 7. ✅ **NewsAPI.org:** Access articles from numerous sources, with support for keyword-based searches and filtering by categories and sources.
 
----
-
 ## 👀 Demo
 
 <h1 align="center">
   <img src="src/assets/demo.gif"/>
 </h1>
-
----
 
 ## 🏁 Running the Project
 
@@ -157,8 +145,6 @@ Choose at least three data sources from the list below:
    ```bash
    npm run dev
    ```
-
----
 
 ## 🐳 Configuring Docker
 
@@ -228,8 +214,6 @@ If you’ve followed these steps correctly, everything should be up and running,
 
 on: `http://localhost:3000`
 
----
-
 ## 🧪 Testing
 
 Integration (E2E) tests are implemented using [Cypress](https://www.cypress.io/).
@@ -260,8 +244,6 @@ A `coverage` folder will be automatically created in the root of your project. I
 npm run test:coverage
 ```
 
----
-
 ## 🛠 Technologies and Tools
 
 Technologies and tools used in the project include:
@@ -273,8 +255,6 @@ Technologies and tools used in the project include:
 - [**Vitest**](https://vitest.dev/)
 - [**ESLint**](https://eslint.org/)
 
----
-
 ## 📍🗺️ Roadmap
 
 Planned features:
@@ -285,15 +265,9 @@ Planned features:
 - [ ] Implement validations and errors display
 - [x] Deploy the application
 
----
-
----
-
 <p align="center">
 If you’ve made it this far, it means everything went smoothly 🙏🏼, and you should be able to access the news in your browser 😱!!!
 <p>
-
----
 
 <h4 align="center">
   😃 Enjoy the Project! and ... BE HAPPY!
@@ -302,10 +276,6 @@ If you’ve made it this far, it means everything went smoothly 🙏🏼, and yo
 <h4 align="center">
   "Stay hungry stay foolish!"
 </h4>
-
----
-
----
 
 <h3 align="center">
 Author: <a alt="Fred-Reis" href="https://github.com/Fred-Reis">Frederico Reis</a>
@@ -323,5 +293,3 @@ Author: <a alt="Fred-Reis" href="https://github.com/Fred-Reis">Frederico Reis</a
 <p align="center">
   Made with ♥️
 </p>
-
----
