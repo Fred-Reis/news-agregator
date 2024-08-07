@@ -1,36 +1,316 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <img alt="Agidesk Challenge"
+    src="src/assets/agidesk-logo.svg"
+  />
 
-## Getting Started
+</div>
 
-First, run the development server:
+<h2 align="center">
+    News Aggregator Web Application
+</h2>
+
+<p align="center">
+
+  <img alt="language version" src="https://img.shields.io/badge/Node-v_v20.14.0-339933?logo=node.js">
+
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Fred-Reis/news-agregator">
+
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Fred-Reis/news-agregator">
+
+  <img alt="GitHub repo size in bytes" src="https://img.shields.io/github/repo-size/Fred-Reis/news-agregator">
+
+</p>
+
+---
+
+<h3 align="center">
+  Links:
+</h3>
+
+<p align="center">
+
+  <a href="#-sobre-esse-projeto">
+    Sobre o projeto
+  </a>&nbsp;&nbsp;
+  <a href="#-frontend">
+    Frontend
+  </a>&nbsp;&nbsp;
+  <a href="#-funcionalidades">
+    Funcionalidades
+  </a>&nbsp;&nbsp;
+  <a href="#-requisitos">
+    Requisitos
+  </a>&nbsp;&nbsp;
+  <a href="#-executando-o-projeto">
+    Executando o projeto
+  </a>&nbsp;&nbsp;
+  <a href="#-tecnologias-e-ferramentas">
+    Tecnologias e Ferramentas
+  </a>&nbsp;&nbsp;
+  <a href="#-roadmap">
+    Roadmap
+  </a>&nbsp;&nbsp;
+  <a href="#author-frederico-reis">
+    Author
+  </a>
+
+</p>
+
+# 📰 News Aggregator Web Application
+
+Welcome to the News Aggregator Web Application. This project aims to showcase my skills in creating a user interface for a news aggregator website. The application pulls articles from various sources and displays them in a clean, easy-to-read format.
+
+## 💡 About the Project
+
+The objective of this project is to develop a frontend application that aggregates news articles from multiple sources. The application will allow users to search for articles, filter results by date, category, and source, and customize their news feed.
+
+**Demo:** [View Demo](http://localhost:3000)
+
+<https://agi-fe-challenge.vercel.app/>
+
+<br/>
+
+## 🖥 Frontend
+
+The frontend application includes:
+
+- **Article Search and Filtering:** Users can search for articles by keyword and filter results by date, category, and source.
+- **Personalized News Feed:** Users can customize their news feed by selecting preferred sources, categories, and authors.
+- **Mobile-Responsive Design:** The website is optimized for viewing on mobile devices.
+
+<br/>
+
+## 🔥 Features
+
+- **Search Articles:** Search for articles based on keywords.
+- **Filter Articles:** Filter results by date, category, and source.
+- **Custom News Feed:** Users can personalize their news feed by choosing preferred sources, categories, and authors.
+- **Responsive Design:** Fully responsive design for optimal viewing on mobile devices.
+
+<br/>
+
+## 📣 Requirements
+
+1. **Article Search and Filtering:** Users should be able to search for articles by keyword and filter the results by date, category, and source.
+2. **Personalized News Feed:** Users should be able to customize their news feed by selecting their preferred sources, categories, and authors.
+3. **Mobile-Responsive Design:** The application should be optimized for mobile devices.
+
+### Data Sources
+
+Choose at least three data sources from the list below:
+
+1. ✅ **NewsAPI:** Access articles from over 70,000 news sources. Supports search and filtering.
+2. **OpenNews:** Retrieve articles from various sources, including newspapers and blogs, based on keywords, categories, and sources.
+3. **NewsCred:** Access articles from multiple sources and filter by keywords, categories, sources, authors, publications, and topics.
+4. **The Guardian:** Access articles from The Guardian newspaper, with support for search and filtering.
+5. ✅ **New York Times:** Access articles from The New York Times, supporting search and filtering.
+6. **BBC News:** Access articles from BBC News, with search and filtering capabilities.
+7. ✅ **NewsAPI.org:** Access articles from numerous sources, with support for keyword-based searches and filtering by categories and sources.
+
+<br/>
+
+## 👀 Demo
+
+<h1 align="center">
+  <img src="src/assets/demo.gif"/>
+</h1>
+
+<br/>
+
+## 🏁 Running the Project
+
+1. **Create a new directory:**
+
+   ```bash
+   mkdir <directory-name>
+   ```
+
+2. **Navigate to the directory:**
+
+   ```bash
+   cd <directory-name>
+   ```
+
+3. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/Fred-Reis/news-agregator
+   ```
+
+4. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+5. **Start the project:**
+
+   ```bash
+   npm run dev
+   ```
+
+<br/>
+
+## 🐳 Configuring Docker
+
+The project has a `Dockerfile` which contains the configuration for deploying the project in a Docker container. It specifies all the parameters that Docker will use to create our image.
+
+Assuming you already have Docker installed and running and ready to build images, if you don't, I recommend following this [GUIDE](https://docs.docker.com/get-docker/).
+
+## 🖼 Creating an Image
+
+Now that Docker is installed, let’s start by creating an image of our project using the `docker build` command.
+
+The following command uses the `-t` flag to allow you to name your image:
+
+**Note:** Make sure you are in the root directory of your project when you run the command, as it uses `.` to specify that the build context is the current directory. Don’t forget the dot!
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+docker build -t <my-image-name> .
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The first build may take a while since Docker will also download the Node.js image.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To see your created image, you can use the following command:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+docker images
+```
 
-## Learn More
+## 📦 Creating a Container
 
-To learn more about Next.js, take a look at the following resources:
+With our image created, let’s create a container using the `docker run` command. We will use several flags to assist:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `-p` directs the ports. The first port is the one you will use to access the container via your browser (I suggest using port 3000, which is a common port for Docker, but you can choose any port you like). The second port **must** be 3000, as specified in our `Dockerfile`, and it will be the port Docker listens to from your machine.
+- `-d` runs the container in the background.
+- `--name` allows you to name your container.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+docker run --name <container-name> -p 3000:3000 -d <my-image-name>
+```
 
-## Deploy on Vercel
+If everything went well, you can now check your container with the following command:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+docker ps -a
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To start your container, use:
+
+```bash
+docker start <container-id>
+```
+
+To see the running containers:
+
+```bash
+docker ps
+```
+
+If it doesn’t start, check for errors with:
+
+```bash
+docker logs <container-id>
+```
+
+This will display the logs generated during the execution of your container.
+
+If you’ve followed these steps correctly, everything should be up and running, and you can now access your application directly from your browser. 😱
+
+on: `http://localhost:3000`
+
+---
+
+## 🧪 Testing
+
+Integration (E2E) tests are implemented using [Cypress](https://www.cypress.io/).
+
+To run the tests, execute:
+
+```bash
+npx cypress open
+```
+
+A Cypress dashboard will open. Choose the E2E option and select your preferred browser. Then select `filter-articles-by-date.cy.ts` or/and `search-articles-by-query.cy.ts` to see the application being tested.
+
+And it was also implemented unit tests using for components and store using [vitest](https://vitest.dev/) and [testing library](https://testing-library.com/)
+
+To run the tests suits, execute the following command:
+
+```bash
+npm run test
+```
+
+The details of the tests will be displayed in your console.
+
+If you want to view the test coverage, run the following command:
+
+A `coverage` folder will be automatically created in the root of your project. Inside this folder, there will be an `index.html` file. Open this file in your browser to access more detailed information about the tests executed.
+
+```bash
+npm run test:coverage
+```
+
+<br/>
+
+## 🛠 Technologies and Tools
+
+Technologies and tools used in the project include:
+
+- [**Nestjs 14**](https://nextjs.org/);
+- [Tailwind](https://tailwindcss.com/);
+- [Zustand](https://zustand-demo.pmnd.rs/);
+- [Cypress](https://www.cypress.io/)
+- [Vitest](https://vitest.dev/);
+- EsLint;
+
+<br/>
+
+## 📍🗺️ Roadmap
+
+Planned features:
+
+- [ ] Internationalization with [i18n](https://www.i18next.com/)
+- [ ] Allow users to serach articles in their prefered language
+- [ ] Implement login to stores users preferences
+- [ ] Implement validations and errors display
+- [x] Deploy the application
+
+---
+
+<br/>
+
+<p align="center">
+If you’ve made it this far, it means everything went smoothly 🙏🏼, and you should be able to access the news in your browser 😱!!!
+<p>
+
+<br/>
+
+<h4 align="center">
+  😃 Enjoy the Project! and ... BE HAPPY!
+</h4>
+
+<h4 align="center">
+  "Stay hungry stay foolish!"
+</h4>
+
+<br/>
+
+---
+
+<h3 align="center">
+Author: <a alt="Fred-Reis" href="https://github.com/Fred-Reis">Frederico Reis</a>
+</h3>
+
+<p align="center">
+
+  <a alt="Frederico Reis" href="https://www.linkedin.com/in/frederico-reis-dev/">
+    <img src="https://img.shields.io/badge/LinkedIn-Frederico_Reis-0077B5?logo=linkedin"/></a>
+  <a alt="Frederico Reis" href="https://github.com/Fred-Reis ">
+  <img src="https://img.shields.io/badge/Fred_Reis-GitHub-000?logo=github"/></a>
+
+</p>
+
+<p align="center">
+  Made with ♥️
+</p>
