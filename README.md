@@ -67,6 +67,8 @@
 
 Welcome to the News Aggregator Web Application. This project aims to showcase my skills in creating a user interface for a news aggregator website. The application pulls articles from various sources and displays them in a clean, easy-to-read format.
 
+<br/>
+
 ## 💡 About the Project
 
 The objective of this project is to develop a frontend application that aggregates news articles from multiple sources. The application will allow users to search for articles, filter results by date, category, and source, and customize their news feed.
@@ -74,6 +76,8 @@ The objective of this project is to develop a frontend application that aggregat
 **Demo:** [View Demo](http://localhost:3000)
 
 <https://agi-fe-challenge.vercel.app/>
+
+<br/>
 
 ## 🖥 Frontend
 
@@ -83,6 +87,8 @@ The frontend application includes:
 - **Personalized News Feed:** Users can customize their news feed by selecting preferred sources, categories, and authors.
 - **Mobile-Responsive Design:** The website is optimized for viewing on mobile devices.
 
+<br/>
+
 ## 🔥 Features
 
 - **Search Articles:** Search for articles based on keywords.
@@ -90,11 +96,15 @@ The frontend application includes:
 - **Custom News Feed:** Users can personalize their news feed by choosing preferred sources, categories, and authors.
 - **Responsive Design:** Fully responsive design for optimal viewing on mobile devices.
 
+<br/>
+
 ## 📣 Requirements
 
 1. **Article Search and Filtering:** Users should be able to search for articles by keyword and filter the results by date, category, and source.
 2. **Personalized News Feed:** Users should be able to customize their news feed by selecting their preferred sources, categories, and authors.
 3. **Mobile-Responsive Design:** The application should be optimized for mobile devices.
+
+<br/>
 
 ### Data Sources
 
@@ -108,11 +118,15 @@ Choose at least three data sources from the list below:
 6. **BBC News:** Access articles from BBC News, with search and filtering capabilities.
 7. ✅ **NewsAPI.org:** Access articles from numerous sources, with support for keyword-based searches and filtering by categories and sources.
 
+<br/>
+
 ## 👀 Demo
 
 <h1 align="center">
   <img src="src/assets/demo.gif"/>
 </h1>
+
+<br/>
 
 ## 🏁 Running the Project
 
@@ -146,11 +160,15 @@ Choose at least three data sources from the list below:
    npm run dev
    ```
 
+<br/>
+
 ## 🐳 Configuring Docker
 
 The project has a `Dockerfile` which contains the configuration for deploying the project in a Docker container. It specifies all the parameters that Docker will use to create our image.
 
 Assuming you already have Docker installed and running and ready to build images, if you don't, I recommend following this [GUIDE](https://docs.docker.com/get-docker/).
+
+<br/>
 
 ## 🖼 Creating an Image
 
@@ -171,6 +189,8 @@ To see your created image, you can use the following command:
 ```bash
 docker images
 ```
+
+<br/>
 
 ## 📦 Creating a Container
 
@@ -214,6 +234,8 @@ If you’ve followed these steps correctly, everything should be up and running,
 
 on: `http://localhost:3000`
 
+<br/>
+
 ## 🧪 Testing
 
 Integration (E2E) tests are implemented using [Cypress](https://www.cypress.io/).
@@ -244,6 +266,8 @@ A `coverage` folder will be automatically created in the root of your project. I
 npm run test:coverage
 ```
 
+<br/>
+
 ## 🛠 Technologies and Tools
 
 Technologies and tools used in the project include:
@@ -254,6 +278,8 @@ Technologies and tools used in the project include:
 - [**Cypress**](https://www.cypress.io/)
 - [**Vitest**](https://vitest.dev/)
 - [**ESLint**](https://eslint.org/)
+
+<br/>
 
 ## 📍🗺️ Roadmap
 
