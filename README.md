@@ -75,9 +75,9 @@ Welcome to the News Aggregator Web Application. This project aims to showcase my
 
 The objective of this project is to develop a frontend application that aggregates news articles from multiple sources. The application will allow users to search for articles, filter results by date, category, and source, and customize their news feed.
 
-**Demo:** [View Demo](http://localhost:3000)
+**Demo:** [Test Online](https://news-agregator-eosin.vercel.app/)
 
-<https://agi-fe-challenge.vercel.app/>
+<https://news-agregator-eosin.vercel.app//>
 
 <br/>
 
@@ -125,7 +125,7 @@ Choose at least three data sources from the list below:
 ## 👀 Demo
 
 <h1 align="center">
-  <img src="src/assets/demo.gif"/>
+  <img src="public/demo.gif"/>
 </h1>
 
 <br/>
@@ -305,6 +305,7 @@ Planned features:
 
 - [ ] Internationalization with [i18n](https://www.i18next.com/)
 - [ ] Allow users to serach articles in their prefered language
+- [ ] Implement CI/CD pipelines using GH Actions
 - [ ] Implement login to stores users preferences
 - [ ] Implement validations and errors display
 - [x] Deploy the application
