@@ -75,10 +75,10 @@ Welcome to the News Aggregator Web Application. This project aims to showcase my
 
 The objective of this project is to develop a frontend application that aggregates news articles from multiple sources. The application will allow users to search for articles, filter results by date, category, and source, and customize their news feed.
 
-**Demo:** [Test Online](https://news-agregator-eosin.vercel.app/)
+**Demo:** [Test Online](https://news-agregator-eosin.vercel.app)
 
 This application was deployed on at Vercel on the following URL:
-<https://news-agregator-eosin.vercel.app//>
+<https://news-agregator-eosin.vercel.app>
 
 <br/>
 
