@@ -9,6 +9,8 @@
     News Aggregator Web Application
 </h2>
 
+<br/>
+
 <p align="center">
 
   <img alt="language version" src="https://img.shields.io/badge/Node-v_v20.14.0-339933?logo=node.js">
@@ -130,10 +132,6 @@ Choose at least three data sources from the list below:
 
 ## 🏁 Running the Project
 
-Here's the translated and reformatted text in Markdown:
-
----
-
 > HEADS UP: Before starting the project, you need to obtain your API keys to access the APIs and run the project.
 
 Add these keys to a file named `.env.local`.
@@ -149,10 +147,6 @@ NEXT_PUBLIC_NEWSAPI_ORG_KEY=
 - **`NEXT_PUBLIC_NEWSAPI_AI_KEY`**: This key is for the NewsAPI.ai API and should be obtained at [NewsAPI.ai Dashboard](https://newsapi.ai/dashboard).
 - **`NEXT_PUBLIC_NYT_API_KEY`**: This key is for the New York Times API and should be obtained at [New York Times Developer](https://developer.nytimes.com/apis).
 - **`NEXT_PUBLIC_NEWSAPI_ORG_KEY`**: This key is for the NewsAPI.org API and should be obtained at [NewsAPI.org](https://newsapi.org/).
-
----
-
-Feel free to adjust the links and details as needed!>
 
 1. **Create a new directory:**
 
