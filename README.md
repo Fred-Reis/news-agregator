@@ -77,6 +77,7 @@ The objective of this project is to develop a frontend application that aggregat
 
 **Demo:** [Test Online](https://news-agregator-eosin.vercel.app/)
 
+This application was deployed on at Vercel on the following URL:
 <https://news-agregator-eosin.vercel.app//>
 
 <br/>
@@ -125,7 +126,7 @@ Choose at least three data sources from the list below:
 ## 👀 Demo
 
 <h1 align="center">
-  <img src="public/demo.gif"/>
+  <img width="600px" src="public/demo.gif"/>
 </h1>
 
 <br/>
