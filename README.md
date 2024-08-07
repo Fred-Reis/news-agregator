@@ -29,23 +29,32 @@
 
 <p align="center">
 
-  <a href="#-sobre-esse-projeto">
-    Sobre o projeto
+  <a href="#-about-the-project">
+    About the Project
   </a>&nbsp;&nbsp;
   <a href="#-frontend">
     Frontend
   </a>&nbsp;&nbsp;
-  <a href="#-funcionalidades">
-    Funcionalidades
+  <a href="#-features">
+    Features
   </a>&nbsp;&nbsp;
-  <a href="#-requisitos">
-    Requisitos
+  <a href="#-requirements">
+    Requirements
   </a>&nbsp;&nbsp;
-  <a href="#-executando-o-projeto">
-    Executando o projeto
+  <a href="#-demo">
+    Demo
   </a>&nbsp;&nbsp;
-  <a href="#-tecnologias-e-ferramentas">
-    Tecnologias e Ferramentas
+  <a href="#-running-the-project">
+    Running the Project
+  </a>&nbsp;&nbsp;
+  <a href="#-configuring-docker">
+    Configuring Docker
+  </a>&nbsp;&nbsp;
+  <a href="#-testing">
+    Testing
+  </a>&nbsp;&nbsp;
+  <a href="#-technologies-and-tools">
+    Technologies and Tools
   </a>&nbsp;&nbsp;
   <a href="#-roadmap">
     Roadmap
@@ -68,7 +77,7 @@ The objective of this project is to develop a frontend application that aggregat
 
 <https://agi-fe-challenge.vercel.app/>
 
-<br/>
+---
 
 ## 🖥 Frontend
 
@@ -78,7 +87,7 @@ The frontend application includes:
 - **Personalized News Feed:** Users can customize their news feed by selecting preferred sources, categories, and authors.
 - **Mobile-Responsive Design:** The website is optimized for viewing on mobile devices.
 
-<br/>
+---
 
 ## 🔥 Features
 
@@ -87,7 +96,7 @@ The frontend application includes:
 - **Custom News Feed:** Users can personalize their news feed by choosing preferred sources, categories, and authors.
 - **Responsive Design:** Fully responsive design for optimal viewing on mobile devices.
 
-<br/>
+---
 
 ## 📣 Requirements
 
@@ -107,7 +116,7 @@ Choose at least three data sources from the list below:
 6. **BBC News:** Access articles from BBC News, with search and filtering capabilities.
 7. ✅ **NewsAPI.org:** Access articles from numerous sources, with support for keyword-based searches and filtering by categories and sources.
 
-<br/>
+---
 
 ## 👀 Demo
 
@@ -115,7 +124,7 @@ Choose at least three data sources from the list below:
   <img src="src/assets/demo.gif"/>
 </h1>
 
-<br/>
+---
 
 ## 🏁 Running the Project
 
@@ -149,7 +158,7 @@ Choose at least three data sources from the list below:
    npm run dev
    ```
 
-<br/>
+---
 
 ## 🐳 Configuring Docker
 
@@ -251,20 +260,20 @@ A `coverage` folder will be automatically created in the root of your project. I
 npm run test:coverage
 ```
 
-<br/>
+---
 
 ## 🛠 Technologies and Tools
 
 Technologies and tools used in the project include:
 
-- [**Nestjs 14**](https://nextjs.org/);
-- [Tailwind](https://tailwindcss.com/);
-- [Zustand](https://zustand-demo.pmnd.rs/);
-- [Cypress](https://www.cypress.io/)
-- [Vitest](https://vitest.dev/);
-- EsLint;
+- [**Nestjs 14**](https://nestjs.com/)
+- [**Tailwind CSS**](https://tailwindcss.com/)
+- [**Zustand**](https://github.com/pmndrs/zustand)
+- [**Cypress**](https://www.cypress.io/)
+- [**Vitest**](https://vitest.dev/)
+- [**ESLint**](https://eslint.org/)
 
-<br/>
+---
 
 ## 📍🗺️ Roadmap
 
@@ -278,13 +287,13 @@ Planned features:
 
 ---
 
-<br/>
+---
 
 <p align="center">
 If you’ve made it this far, it means everything went smoothly 🙏🏼, and you should be able to access the news in your browser 😱!!!
 <p>
 
-<br/>
+---
 
 <h4 align="center">
   😃 Enjoy the Project! and ... BE HAPPY!
@@ -294,7 +303,7 @@ If you’ve made it this far, it means everything went smoothly 🙏🏼, and yo
   "Stay hungry stay foolish!"
 </h4>
 
-<br/>
+---
 
 ---
 
@@ -314,3 +323,5 @@ Author: <a alt="Fred-Reis" href="https://github.com/Fred-Reis">Frederico Reis</a
 <p align="center">
   Made with ♥️
 </p>
+
+---
