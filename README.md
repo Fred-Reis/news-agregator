@@ -77,7 +77,8 @@ The objective of this project is to develop a frontend application that aggregat
 
 **Demo:** [Test Online](https://news-agregator-eosin.vercel.app)
 
-This application was deployed on at Vercel on the following URL: 
+This application was deployed on at Vercel on the following URL:   
+  
 <https://news-agregator-eosin.vercel.app>
 
 <br/>
