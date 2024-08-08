@@ -47,7 +47,7 @@ export const Filter = () => {
   });
 
   return (
-    <div className="w-full min-w-52 h-10 rounded-md text-base ring-2 outline-none bg-slate-100 ring-[#59b0d7]">
+    <div className="w-full shrink lg:min-w-52 h-10 rounded-md text-base ring-2 outline-none bg-slate-100 ring-[#59b0d7]">
       <div className="relative">
         <button
           type="button"

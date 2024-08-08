@@ -22,7 +22,7 @@ export const Card = memo(({ news }: { news: Article }) => (
     />
 
     <div className="p-2 sm:p-4 flex-1 flex flex-col h-auto">
-      <div className="flex flex-row md:flex-col items-center md:items-start gap-16 md:gap-0">
+      <div className="flex flex-row md:flex-col items-center md:items-start justify-between md:gap-0">
         <span className="text-gray-500 flex items-center gap-1 text-[10px] sm:mt-2 font-bold">
           <Timer className="w-4 h-4" />
           {parseDate(news.publishedAt)}

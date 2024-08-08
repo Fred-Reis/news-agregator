@@ -8,7 +8,7 @@ export const NoArticles = () => (
       width={600}
       height={600}
     />
-    <h1 className="text-3xl text-slate-600 font-bold mt-8">
+    <h1 className="text-3xl text-slate-600 font-bold mt-8 text-center">
       No articles were found for this query
     </h1>
   </div>

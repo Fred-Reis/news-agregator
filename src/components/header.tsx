@@ -50,7 +50,7 @@ export const Header = () => {
 
             <form
               onSubmit={handleSubmit}
-              className="flex items-center rounded-md bg-slate-100 ring-2 ring-[#59b0d7] px-3 py-2 gap-3 w-full lg:w-[320px]"
+              className="flex items-center rounded-md bg-slate-100 ring-2 ring-[#59b0d7] px-3 py-2 gap-3 w-48 sm:min-w-[420px]"
             >
               <button type="submit" disabled={!query}>
                 <Search className="w-5 h-5 text-[#59b0d7]" />

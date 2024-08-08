@@ -60,18 +60,18 @@ export default function Home() {
     fetchAllData();
   }, []);
 
-  if (loading) {
-    return <HomeLoading />;
-  }
+  // if (loading) {
+  //   return <HomeLoading />;
+  // }
 
   if (filteredArticles.length === 0) {
     return <NoArticles />;
   }
 
   return (
-    <section className="grid gap-y-10 p-8 lg:pt-16 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 max-w-[1400px] gap-6 mx-auto  place-content-between">
+    <section className="grid gap-y-10 p-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:pt-16 max-w-[1400px] gap-6 mx-auto ">
       {filteredArticles.map((news) => (
-        <div className="mx-auto" key={news.id}>
+        <div className="mx-auto max-w-fit" key={news.id}>
           <Card news={news} />
         </div>
       ))}
